@@ -1,20 +1,42 @@
 .cercle{
+  fill:red;
 
 }
 
 .ellipse{
-
+  fill:yellow;
 }
 
 #g1{
-  animation: rotationinf 4s infinite linear;
+  animation: rotationinf 4s infinite linear, remplissagec 5s alternate infinite linear;
   transform-origin: 500px 300px;
   transform-style: preserve-3D;
+  stroke:blue;
+  stroke-miterlimit:10;
+  stroke-dasharray: 210;
+  stroke-width:3px;
+  
 }
 
 @keyframes rotationinf {
-    from { transform: rotate(0); }
-    to { transform: rotate(360deg); }
+    0% { 
+      transform: rotate(0);
+      
+     }
+    100% { 
+      transform: rotate(360deg);
+      
+     }
+  }
+
+  @keyframes remplissagec{
+    0% { 
+      stroke-dashoffset: 1000;
+     }
+
+    100%{
+      stroke-dashoffset: 0;
+    }
   }
 
 /*.svg_1{
