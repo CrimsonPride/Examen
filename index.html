@@ -17,9 +17,16 @@
   		<!-- La base HTML -->
         <!-- La dimension du viewport est de 800px par 600px -->
     <svg width="1000px" height="800px">
-      <circle id="cer1" class="cercle" cx="500" cy="300" r="35"/>
-      <ellipse id="eli1" class="ellipse" cx="500" cy="300" rx="10" ry="50"/>
-      <ellipse id="eli1" class="ellipse" cx="500" cy="300" rx="50" ry="10"/>
+      <def>
+        <!-- Un Cercle avec un rayon de 35 -->
+        <circle id = "cer1" class="cercle " cx = "500" cy = "300" r = "35" fill = "red"/>
+        
+        <!-- Une ellipse (rx=10/50,ry=50/10) -->
+        <g>
+        <ellipse id="eli1" class="ellipse" cx="500" cy="300" rx="10" ry="50" fill = yellow/>
+        <ellipse id="eli1" class="ellipse" cx="500" cy="300" rx="50" ry="10" fill = yellow/>
+        </g>
+    </defs> 
     </svg>
   </body>
 </html>
